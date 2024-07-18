@@ -3,6 +3,13 @@ from Vacancy import Vacancy
 from JSONVacancyStorage import JSONVacancyStorage
 
 def interact_with_user(file_path):
+    """
+    Функция для интерактивного взаимодействия с юзером.
+    Позволяет юзеру выполнить следующие действия:
+    1. Запросить вакансии с hh по поисковому запросу.
+    2. Вывести топ N вакансий по зарплате.
+    3. Найти вакансии по ключслову в описании.
+    """
     api = HeadHunterAPI()
     storage = JSONVacancyStorage(file_path)
 
@@ -27,10 +34,15 @@ def interact_with_user(file_path):
             link = 'Некорректная ссылка'
         vacancies.append(Vacancy(title, company, salary_str, description, link))
 
-    # Сохраняем объекты Vacancy
-    storage.save_vacancies(vacancies)
+    # Сохраняем объекты Vacancy, добавляя их к существующим данным
+    storage.append([vacancy.to_dict() for vacancy in vacancies])
 
-    top_n = int(input("Введите количество вакансий для вывода топ N по зарплате: "))
+    try:
+        top_n = int(input("Введите количество вакансий для вывода топ N по зарплате: "))
+    except ValueError:
+        print("Ошибка: введите числовое значение.")
+        return
+
     sorted_vacancies = sorted(vacancies, reverse=True)[:top_n]
     print(f"Топ {top_n} вакансий по зарплате:")
     for vacancy in sorted_vacancies:
