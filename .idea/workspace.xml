@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa64d618-16d3-464c-8fda-fc42b74cd1cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Course_Project_4_2_OOP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fa64d618-16d3-464c-8fda-fc42b74cd1cb" name="Changes" comment="улучшен файл а также добавлены комментарии" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +66,19 @@
       <option name="presentableId" value="Default" />
       <updated>1721277365635</updated>
     </task>
+    <task id="LOCAL-00001" summary="улучшен файл а также добавлены комментарии">
+      <option name="closed" value="true" />
+      <created>1721309737676</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721309737676</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="улучшен файл а также добавлены комментарии" />
+    <option name="LAST_COMMIT_MESSAGE" value="улучшен файл а также добавлены комментарии" />
   </component>
 </project>
